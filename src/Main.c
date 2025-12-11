@@ -13,5 +13,16 @@
 int main(){
     Yaml yl = Yaml_New("./code/Main.yaml");
     
+    CStr value0 = Yaml_GetCStr(&yl,"monitoring/uptime/history/1/details/issue");
+    printf("Value found: '%s'\n",value0);
+    
+    CStr value1 = Yaml_GetCStr(&yl,"api/endpoints/2/auth_required");
+    printf("Value found: '%s'\n",value1);
+
+    CStr value2 = Yaml_GetCStr(&yl,"users/accounts/active/0/role");
+    printf("Value found: '%s'\n",value2);
+
+    Yaml_Print(&yl);
+    Yaml_Free(&yl);
     return 0;
 }
