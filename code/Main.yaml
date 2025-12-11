@@ -1,0 +1,21 @@
+# Dies ist ein Kommentar
+name: Max Mustermann
+alter: 29
+ist_aktiv: true
+
+adresse:
+  strasse: Hauptstraße 12
+  stadt: Berlin
+  plz: 10115
+
+hobbys:
+  - Lesen
+  - Kochen
+  - Programmieren
+
+einstellungen:
+  sprache: de
+  theme: dark
+  benachrichtigungen:
+    email: true
+    sms: false
