@@ -59,7 +59,7 @@ users:
   accounts: 
     active: 
       - username: "alice"
-        role: admin
+        role: imposter
         settings: 
           theme: dark
           notifications: 

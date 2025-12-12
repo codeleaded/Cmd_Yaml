@@ -22,6 +22,8 @@ int main(){
     CStr value2 = Yaml_GetCStr(&yl,"users/accounts/active/0/role");
     printf("Value found: '%s'\n",value2);
 
+    Yaml_Set(&yl,"users/accounts/active/0/role","imposter");
+
     Yaml_Print(&yl);
     Yaml_Save(&yl,"./code/Save.yaml");
     Yaml_Free(&yl);
