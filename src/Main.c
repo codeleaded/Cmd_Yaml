@@ -23,6 +23,7 @@ int main(){
     printf("Value found: '%s'\n",value2);
 
     Yaml_Print(&yl);
+    Yaml_Save(&yl,"./code/Save.yaml");
     Yaml_Free(&yl);
     return 0;
 }
