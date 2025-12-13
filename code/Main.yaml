@@ -182,4 +182,3 @@ storage:
       type: local
       path: /var/storage/logs
       compress: true
-
