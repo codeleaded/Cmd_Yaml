@@ -16,8 +16,8 @@ int main(){
     CStr value0 = Yaml_GetCStr(&yl,"monitoring/uptime/history/1/details/issue");
     printf("Value found: '%s'\n",value0);
     
-    CStr value1 = Yaml_GetCStr(&yl,"api/endpoints/2/auth_required");
-    printf("Value found: '%s'\n",value1);
+    Boolean value1 = Yaml_GetBool(&yl,"api/endpoints/2/auth_required");
+    printf("Value found: '%d'\n",value1);
 
     CStr value2 = Yaml_GetCStr(&yl,"users/accounts/active/0/role");
     printf("Value found: '%s'\n",value2);
